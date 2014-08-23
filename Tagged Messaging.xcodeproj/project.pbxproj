@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D10B010619A7FAE6007E3B08 /* TMLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D10B010519A7FAE6007E3B08 /* TMLabel.m */; };
+		D120FB92199EC91800B503CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FB91199EC91800B503CF /* Foundation.framework */; };
+		D120FB94199EC91800B503CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FB93199EC91800B503CF /* CoreGraphics.framework */; };
+		D120FB96199EC91800B503CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FB95199EC91800B503CF /* UIKit.framework */; };
+		D120FB9C199EC91800B503CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D120FB9A199EC91800B503CF /* InfoPlist.strings */; };
+		D120FB9E199EC91800B503CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FB9D199EC91800B503CF /* main.m */; };
+		D120FBA2199EC91800B503CF /* TMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBA1199EC91800B503CF /* TMAppDelegate.m */; };
+		D120FBA4199EC91800B503CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D120FBA3199EC91800B503CF /* Images.xcassets */; };
+		D120FBAB199EC91800B503CF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FBAA199EC91800B503CF /* XCTest.framework */; };
+		D120FBAC199EC91800B503CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FB91199EC91800B503CF /* Foundation.framework */; };
+		D120FBAD199EC91800B503CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D120FB95199EC91800B503CF /* UIKit.framework */; };
+		D120FBB5199EC91800B503CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D120FBB3199EC91800B503CF /* InfoPlist.strings */; };
+		D120FBB7199EC91800B503CF /* Tagged_MessagingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBB6199EC91800B503CF /* Tagged_MessagingTests.m */; };
+		D120FBC1199ECBA800B503CF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D120FBC0199ECBA800B503CF /* MainStoryboard.storyboard */; };
+		D120FBC4199ED00300B503CF /* TMInboxTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBC3199ED00300B503CF /* TMInboxTableViewController.m */; };
+		D120FBC7199ED37000B503CF /* InboxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBC6199ED37000B503CF /* InboxTableViewCell.m */; };
+		D120FBCA19A3FC7F00B503CF /* TMMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBC919A3FC7F00B503CF /* TMMessage.m */; };
+		D120FBCD19A4004200B503CF /* TMChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBCC19A4004200B503CF /* TMChatViewController.m */; };
+		D120FBD919A53D9400B503CF /* TMSenderChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBD819A53D9400B503CF /* TMSenderChatTableViewCell.m */; };
+		D120FBDC19A53DA500B503CF /* TMReceiverChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D120FBDB19A53DA500B503CF /* TMReceiverChatTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D120FBAE199EC91800B503CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D120FB86199EC91800B503CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D120FB8D199EC91800B503CF;
+			remoteInfo = "Tagged Messaging";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D10B010419A7FAE6007E3B08 /* TMLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMLabel.h; sourceTree = "<group>"; };
+		D10B010519A7FAE6007E3B08 /* TMLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMLabel.m; sourceTree = "<group>"; };
+		D120FB8E199EC91800B503CF /* Tagged Messaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tagged Messaging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D120FB91199EC91800B503CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D120FB93199EC91800B503CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D120FB95199EC91800B503CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D120FB99199EC91800B503CF /* Tagged Messaging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tagged Messaging-Info.plist"; sourceTree = "<group>"; };
+		D120FB9B199EC91800B503CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D120FB9D199EC91800B503CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D120FB9F199EC91800B503CF /* Tagged Messaging-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tagged Messaging-Prefix.pch"; sourceTree = "<group>"; };
+		D120FBA0199EC91800B503CF /* TMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TMAppDelegate.h; sourceTree = "<group>"; };
+		D120FBA1199EC91800B503CF /* TMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TMAppDelegate.m; sourceTree = "<group>"; };
+		D120FBA3199EC91800B503CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D120FBA9199EC91800B503CF /* Tagged MessagingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tagged MessagingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D120FBAA199EC91800B503CF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D120FBB2199EC91800B503CF /* Tagged MessagingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tagged MessagingTests-Info.plist"; sourceTree = "<group>"; };
+		D120FBB4199EC91800B503CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D120FBB6199EC91800B503CF /* Tagged_MessagingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tagged_MessagingTests.m; sourceTree = "<group>"; };
+		D120FBC0199ECBA800B503CF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D120FBC2199ED00300B503CF /* TMInboxTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMInboxTableViewController.h; sourceTree = "<group>"; };
+		D120FBC3199ED00300B503CF /* TMInboxTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMInboxTableViewController.m; sourceTree = "<group>"; };
+		D120FBC5199ED37000B503CF /* InboxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxTableViewCell.h; sourceTree = "<group>"; };
+		D120FBC6199ED37000B503CF /* InboxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxTableViewCell.m; sourceTree = "<group>"; };
+		D120FBC819A3FC7F00B503CF /* TMMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMessage.h; sourceTree = "<group>"; };
+		D120FBC919A3FC7F00B503CF /* TMMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMessage.m; sourceTree = "<group>"; };
+		D120FBCB19A4004200B503CF /* TMChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMChatViewController.h; sourceTree = "<group>"; };
+		D120FBCC19A4004200B503CF /* TMChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMChatViewController.m; sourceTree = "<group>"; };
+		D120FBD719A53D9400B503CF /* TMSenderChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMSenderChatTableViewCell.h; sourceTree = "<group>"; };
+		D120FBD819A53D9400B503CF /* TMSenderChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMSenderChatTableViewCell.m; sourceTree = "<group>"; };
+		D120FBDA19A53DA500B503CF /* TMReceiverChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMReceiverChatTableViewCell.h; sourceTree = "<group>"; };
+		D120FBDB19A53DA500B503CF /* TMReceiverChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMReceiverChatTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D120FB8B199EC91800B503CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FB94199EC91800B503CF /* CoreGraphics.framework in Frameworks */,
+				D120FB96199EC91800B503CF /* UIKit.framework in Frameworks */,
+				D120FB92199EC91800B503CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D120FBA6199EC91800B503CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FBAB199EC91800B503CF /* XCTest.framework in Frameworks */,
+				D120FBAD199EC91800B503CF /* UIKit.framework in Frameworks */,
+				D120FBAC199EC91800B503CF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D120FB85199EC91800B503CF = {
+			isa = PBXGroup;
+			children = (
+				D120FBD719A53D9400B503CF /* TMSenderChatTableViewCell.h */,
+				D120FBD819A53D9400B503CF /* TMSenderChatTableViewCell.m */,
+				D120FBDA19A53DA500B503CF /* TMReceiverChatTableViewCell.h */,
+				D10B010419A7FAE6007E3B08 /* TMLabel.h */,
+				D10B010519A7FAE6007E3B08 /* TMLabel.m */,
+				D120FBDB19A53DA500B503CF /* TMReceiverChatTableViewCell.m */,
+				D120FB97199EC91800B503CF /* Tagged Messaging */,
+				D120FBB0199EC91800B503CF /* Tagged MessagingTests */,
+				D120FB90199EC91800B503CF /* Frameworks */,
+				D120FB8F199EC91800B503CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D120FB8F199EC91800B503CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D120FB8E199EC91800B503CF /* Tagged Messaging.app */,
+				D120FBA9199EC91800B503CF /* Tagged MessagingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D120FB90199EC91800B503CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D120FB91199EC91800B503CF /* Foundation.framework */,
+				D120FB93199EC91800B503CF /* CoreGraphics.framework */,
+				D120FB95199EC91800B503CF /* UIKit.framework */,
+				D120FBAA199EC91800B503CF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D120FB97199EC91800B503CF /* Tagged Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				D120FBA0199EC91800B503CF /* TMAppDelegate.h */,
+				D120FBA1199EC91800B503CF /* TMAppDelegate.m */,
+				D120FBC0199ECBA800B503CF /* MainStoryboard.storyboard */,
+				D120FBCB19A4004200B503CF /* TMChatViewController.h */,
+				D120FBCC19A4004200B503CF /* TMChatViewController.m */,
+				D120FBC819A3FC7F00B503CF /* TMMessage.h */,
+				D120FBC919A3FC7F00B503CF /* TMMessage.m */,
+				D120FBC5199ED37000B503CF /* InboxTableViewCell.h */,
+				D120FBC6199ED37000B503CF /* InboxTableViewCell.m */,
+				D120FBC2199ED00300B503CF /* TMInboxTableViewController.h */,
+				D120FBC3199ED00300B503CF /* TMInboxTableViewController.m */,
+				D120FBA3199EC91800B503CF /* Images.xcassets */,
+				D120FB98199EC91800B503CF /* Supporting Files */,
+			);
+			path = "Tagged Messaging";
+			sourceTree = "<group>";
+		};
+		D120FB98199EC91800B503CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D120FB99199EC91800B503CF /* Tagged Messaging-Info.plist */,
+				D120FB9A199EC91800B503CF /* InfoPlist.strings */,
+				D120FB9D199EC91800B503CF /* main.m */,
+				D120FB9F199EC91800B503CF /* Tagged Messaging-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D120FBB0199EC91800B503CF /* Tagged MessagingTests */ = {
+			isa = PBXGroup;
+			children = (
+				D120FBB6199EC91800B503CF /* Tagged_MessagingTests.m */,
+				D120FBB1199EC91800B503CF /* Supporting Files */,
+			);
+			path = "Tagged MessagingTests";
+			sourceTree = "<group>";
+		};
+		D120FBB1199EC91800B503CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D120FBB2199EC91800B503CF /* Tagged MessagingTests-Info.plist */,
+				D120FBB3199EC91800B503CF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D120FB8D199EC91800B503CF /* Tagged Messaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D120FBBA199EC91800B503CF /* Build configuration list for PBXNativeTarget "Tagged Messaging" */;
+			buildPhases = (
+				D120FB8A199EC91800B503CF /* Sources */,
+				D120FB8B199EC91800B503CF /* Frameworks */,
+				D120FB8C199EC91800B503CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tagged Messaging";
+			productName = "Tagged Messaging";
+			productReference = D120FB8E199EC91800B503CF /* Tagged Messaging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D120FBA8199EC91800B503CF /* Tagged MessagingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D120FBBD199EC91800B503CF /* Build configuration list for PBXNativeTarget "Tagged MessagingTests" */;
+			buildPhases = (
+				D120FBA5199EC91800B503CF /* Sources */,
+				D120FBA6199EC91800B503CF /* Frameworks */,
+				D120FBA7199EC91800B503CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D120FBAF199EC91800B503CF /* PBXTargetDependency */,
+			);
+			name = "Tagged MessagingTests";
+			productName = "Tagged MessagingTests";
+			productReference = D120FBA9199EC91800B503CF /* Tagged MessagingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D120FB86199EC91800B503CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Tagged;
+				TargetAttributes = {
+					D120FBA8199EC91800B503CF = {
+						TestTargetID = D120FB8D199EC91800B503CF;
+					};
+				};
+			};
+			buildConfigurationList = D120FB89199EC91800B503CF /* Build configuration list for PBXProject "Tagged Messaging" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D120FB85199EC91800B503CF;
+			productRefGroup = D120FB8F199EC91800B503CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D120FB8D199EC91800B503CF /* Tagged Messaging */,
+				D120FBA8199EC91800B503CF /* Tagged MessagingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D120FB8C199EC91800B503CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FBC1199ECBA800B503CF /* MainStoryboard.storyboard in Resources */,
+				D120FB9C199EC91800B503CF /* InfoPlist.strings in Resources */,
+				D120FBA4199EC91800B503CF /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D120FBA7199EC91800B503CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FBB5199EC91800B503CF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D120FB8A199EC91800B503CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FB9E199EC91800B503CF /* main.m in Sources */,
+				D120FBCD19A4004200B503CF /* TMChatViewController.m in Sources */,
+				D120FBDC19A53DA500B503CF /* TMReceiverChatTableViewCell.m in Sources */,
+				D120FBA2199EC91800B503CF /* TMAppDelegate.m in Sources */,
+				D10B010619A7FAE6007E3B08 /* TMLabel.m in Sources */,
+				D120FBD919A53D9400B503CF /* TMSenderChatTableViewCell.m in Sources */,
+				D120FBC7199ED37000B503CF /* InboxTableViewCell.m in Sources */,
+				D120FBCA19A3FC7F00B503CF /* TMMessage.m in Sources */,
+				D120FBC4199ED00300B503CF /* TMInboxTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D120FBA5199EC91800B503CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D120FBB7199EC91800B503CF /* Tagged_MessagingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D120FBAF199EC91800B503CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D120FB8D199EC91800B503CF /* Tagged Messaging */;
+			targetProxy = D120FBAE199EC91800B503CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D120FB9A199EC91800B503CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D120FB9B199EC91800B503CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D120FBB3199EC91800B503CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D120FBB4199EC91800B503CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D120FBB8199EC91800B503CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D120FBB9199EC91800B503CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D120FBBB199EC91800B503CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Messaging/Tagged Messaging-Prefix.pch";
+				INFOPLIST_FILE = "Tagged Messaging/Tagged Messaging-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D120FBBC199EC91800B503CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Messaging/Tagged Messaging-Prefix.pch";
+				INFOPLIST_FILE = "Tagged Messaging/Tagged Messaging-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D120FBBE199EC91800B503CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tagged Messaging.app/Tagged Messaging";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Messaging/Tagged Messaging-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tagged MessagingTests/Tagged MessagingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D120FBBF199EC91800B503CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tagged Messaging.app/Tagged Messaging";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tagged Messaging/Tagged Messaging-Prefix.pch";
+				INFOPLIST_FILE = "Tagged MessagingTests/Tagged MessagingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D120FB89199EC91800B503CF /* Build configuration list for PBXProject "Tagged Messaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D120FBB8199EC91800B503CF /* Debug */,
+				D120FBB9199EC91800B503CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D120FBBA199EC91800B503CF /* Build configuration list for PBXNativeTarget "Tagged Messaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D120FBBB199EC91800B503CF /* Debug */,
+				D120FBBC199EC91800B503CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D120FBBD199EC91800B503CF /* Build configuration list for PBXNativeTarget "Tagged MessagingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D120FBBE199EC91800B503CF /* Debug */,
+				D120FBBF199EC91800B503CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D120FB86199EC91800B503CF /* Project object */;
+}
